@@ -14,7 +14,7 @@ function login(){
 
     //로그인 api : /auth/signin
     //로그인 req 
-    fetch("/auth/signin", {
+    fetch("/login", {
         method : "POST",
         header : {
             "Content-Type" : "application/json",

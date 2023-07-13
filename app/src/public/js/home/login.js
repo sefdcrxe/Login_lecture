@@ -14,7 +14,7 @@ function login(){
 
     //로그인 api : /auth/signin
     //로그인 req 
-    fetch("/login", {
+    fetch("/auth/signin", {
         method : "POST",
         header : {
             "Content-Type" : "application/json",
@@ -24,7 +24,7 @@ function login(){
         .then((res) => res.json())
         .then((res) => {
             if (res.success){
-                //성공 시, 루트 이동 경로 설정
+                //성공 시, 루트 이동 경로 설정 !! 메인페이지 api 생성 시, 아래 창에 추가할 예정
                 location.href = "/";
             } else {
                 alert(res.msg);

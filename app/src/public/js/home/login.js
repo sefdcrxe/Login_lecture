@@ -24,6 +24,7 @@ function login(){
         .then((res) => res.json())
         .then((res) => {
             if (res.success){
+                //성공 시, 루트 이동 경로 설정
                 location.href = "/";
             } else {
                 alert(res.msg);
